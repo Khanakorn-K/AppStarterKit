@@ -23,6 +23,16 @@
 		6D23E0992DD5AFA400303B38 /* TOCropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 6D23E0982DD5AFA400303B38 /* TOCropViewController */; };
 		6D23E1992DD7043800303B38 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 6D23E1982DD7043800303B38 /* BottomSheet */; };
 		6D23E19C2DD7047200303B38 /* SwiftfulLoadingIndicators in Frameworks */ = {isa = PBXBuildFile; productRef = 6D23E19B2DD7047200303B38 /* SwiftfulLoadingIndicators */; };
+		6D40A0B62DDAE2BF0001AE72 /* SegmentedPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 6D40A0B52DDAE2BF0001AE72 /* SegmentedPicker */; };
+		6D40A0BD2DDAE91C0001AE72 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = 6D40A0BC2DDAE91C0001AE72 /* SwiftUIIntrospect */; };
+		6D40EAB22DDEE8CC002CFF07 /* CustomizableSegmentedControl in Frameworks */ = {isa = PBXBuildFile; productRef = 6D40EAB12DDEE8CC002CFF07 /* CustomizableSegmentedControl */; };
+		6D40EABC2DDF0477002CFF07 /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = 6D40EABB2DDF0477002CFF07 /* SwiftUIPager */; };
+		6D40EAC22DDF0F82002CFF07 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 6D40EAC12DDF0F82002CFF07 /* SideMenu */; };
+		6D40EB0D2DDF1321002CFF07 /* ClusterKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6D40EB0C2DDF1321002CFF07 /* ClusterKit */; };
+		6D40EB102DDF135D002CFF07 /* MapboxDirections in Frameworks */ = {isa = PBXBuildFile; productRef = 6D40EB0F2DDF135D002CFF07 /* MapboxDirections */; };
+		6D40EB122DDF135D002CFF07 /* mapbox-directions-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 6D40EB112DDF135D002CFF07 /* mapbox-directions-swift */; };
+		6D40EB152DDF1386002CFF07 /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 6D40EB142DDF1386002CFF07 /* ActivityIndicatorView */; };
+		6D40EB182DDF13A5002CFF07 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 6D40EB172DDF13A5002CFF07 /* Logging */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +43,8 @@
 		6D23E19D2DD7052E00303B38 /* Exceptions for "AppStarterKit" folder in "AppStarterKit" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				App/ViewModels/Untitled.swift,
+				FeatureLogin/Models/Untitled.swift,
 				Info.plist,
 			);
 			target = 6D23E0452DD5AADA00303B38 /* AppStarterKit */;
@@ -57,17 +69,27 @@
 			files = (
 				6D23E0992DD5AFA400303B38 /* TOCropViewController in Frameworks */,
 				6D23E0882DD5AECA00303B38 /* RichText in Frameworks */,
+				6D40EABC2DDF0477002CFF07 /* SwiftUIPager in Frameworks */,
 				6D23E0942DD5AF8800303B38 /* Toast in Frameworks */,
+				6D40EB0D2DDF1321002CFF07 /* ClusterKit in Frameworks */,
+				6D40EB152DDF1386002CFF07 /* ActivityIndicatorView in Frameworks */,
+				6D40EAC22DDF0F82002CFF07 /* SideMenu in Frameworks */,
+				6D40EAB22DDEE8CC002CFF07 /* CustomizableSegmentedControl in Frameworks */,
+				6D40EB102DDF135D002CFF07 /* MapboxDirections in Frameworks */,
 				6D23E08E2DD5AF2B00303B38 /* SwifterSwift in Frameworks */,
 				6D23E0792DD5AE4400303B38 /* FacebookLogin in Frameworks */,
 				6D23E0912DD5AF5400303B38 /* SwiftMessages-Dynamic in Frameworks */,
 				6D23E06E2DD5ADA700303B38 /* AsyncSwiftConnect in Frameworks */,
 				6D23E0852DD5AEBB00303B38 /* NavigationStackBackport in Frameworks */,
 				6D23E08B2DD5AEDF00303B38 /* SJSegmentedViewController in Frameworks */,
+				6D40A0BD2DDAE91C0001AE72 /* SwiftUIIntrospect in Frameworks */,
+				6D40A0B62DDAE2BF0001AE72 /* SegmentedPicker in Frameworks */,
 				6D23E0772DD5AE4400303B38 /* FacebookCore in Frameworks */,
+				6D40EB122DDF135D002CFF07 /* mapbox-directions-swift in Frameworks */,
 				6D23E1992DD7043800303B38 /* BottomSheet in Frameworks */,
 				6D23E19C2DD7047200303B38 /* SwiftfulLoadingIndicators in Frameworks */,
 				6D23E07F2DD5AE7500303B38 /* LineSDK in Frameworks */,
+				6D40EB182DDF13A5002CFF07 /* Logging in Frameworks */,
 				6D23E0742DD5AE2100303B38 /* ClientSecurityV4 in Frameworks */,
 				6D23E07C2DD5AE5E00303B38 /* Kingfisher in Frameworks */,
 				6D23E0972DD5AFA400303B38 /* CropViewController in Frameworks */,
@@ -129,6 +151,16 @@
 				6D23E0982DD5AFA400303B38 /* TOCropViewController */,
 				6D23E1982DD7043800303B38 /* BottomSheet */,
 				6D23E19B2DD7047200303B38 /* SwiftfulLoadingIndicators */,
+				6D40A0B52DDAE2BF0001AE72 /* SegmentedPicker */,
+				6D40A0BC2DDAE91C0001AE72 /* SwiftUIIntrospect */,
+				6D40EAB12DDEE8CC002CFF07 /* CustomizableSegmentedControl */,
+				6D40EABB2DDF0477002CFF07 /* SwiftUIPager */,
+				6D40EAC12DDF0F82002CFF07 /* SideMenu */,
+				6D40EB0C2DDF1321002CFF07 /* ClusterKit */,
+				6D40EB0F2DDF135D002CFF07 /* MapboxDirections */,
+				6D40EB112DDF135D002CFF07 /* mapbox-directions-swift */,
+				6D40EB142DDF1386002CFF07 /* ActivityIndicatorView */,
+				6D40EB172DDF13A5002CFF07 /* Logging */,
 			);
 			productName = AppStarterKit;
 			productReference = 6D23E0462DD5AADA00303B38 /* AppStarterKit.app */;
@@ -173,6 +205,15 @@
 				6D23E0952DD5AFA400303B38 /* XCRemoteSwiftPackageReference "TOCropViewController" */,
 				6D23E1972DD7043800303B38 /* XCRemoteSwiftPackageReference "BottomSheet" */,
 				6D23E19A2DD7047200303B38 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */,
+				6D40A0B42DDAE2BF0001AE72 /* XCRemoteSwiftPackageReference "SwiftySegmentedPicker" */,
+				6D40A0BB2DDAE91C0001AE72 /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
+				6D40EAB02DDEE8CC002CFF07 /* XCRemoteSwiftPackageReference "CustomizableSegmentedControl" */,
+				6D40EABA2DDF0477002CFF07 /* XCRemoteSwiftPackageReference "SwiftUIPager" */,
+				6D40EAC02DDF0F82002CFF07 /* XCRemoteSwiftPackageReference "SideMenu" */,
+				6D40EB0B2DDF1321002CFF07 /* XCRemoteSwiftPackageReference "ClusterKit" */,
+				6D40EB0E2DDF135D002CFF07 /* XCRemoteSwiftPackageReference "mapbox-directions-swift" */,
+				6D40EB132DDF1386002CFF07 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
+				6D40EB162DDF13A5002CFF07 /* XCRemoteSwiftPackageReference "swift-log" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6D23E0472DD5AADA00303B38 /* Products */;
@@ -329,6 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppStarterKit/AppStarterKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
@@ -358,6 +400,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppStarterKit/AppStarterKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
@@ -518,6 +561,78 @@
 				minimumVersion = 0.0.4;
 			};
 		};
+		6D40A0B42DDAE2BF0001AE72 /* XCRemoteSwiftPackageReference "SwiftySegmentedPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KazaiMazai/SwiftySegmentedPicker";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
+		6D40A0BB2DDAE91C0001AE72 /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/swiftui-introspect";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+		6D40EAB02DDEE8CC002CFF07 /* XCRemoteSwiftPackageReference "CustomizableSegmentedControl" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Inxel/CustomizableSegmentedControl";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+		6D40EABA2DDF0477002CFF07 /* XCRemoteSwiftPackageReference "SwiftUIPager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fermoya/SwiftUIPager";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.5.0;
+			};
+		};
+		6D40EAC02DDF0F82002CFF07 /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+		6D40EB0B2DDF1321002CFF07 /* XCRemoteSwiftPackageReference "ClusterKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sk-chanch/ClusterKit";
+			requirement = {
+				branch = "Fix-Mapbox-SPM";
+				kind = branch;
+			};
+		};
+		6D40EB0E2DDF135D002CFF07 /* XCRemoteSwiftPackageReference "mapbox-directions-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sk-chanch/mapbox-directions-swift";
+			requirement = {
+				branch = "Jertam-Direction";
+				kind = branch;
+			};
+		};
+		6D40EB132DDF1386002CFF07 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ActivityIndicatorView";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+		6D40EB162DDF13A5002CFF07 /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.6.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -600,6 +715,56 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6D23E19A2DD7047200303B38 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */;
 			productName = SwiftfulLoadingIndicators;
+		};
+		6D40A0B52DDAE2BF0001AE72 /* SegmentedPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D40A0B42DDAE2BF0001AE72 /* XCRemoteSwiftPackageReference "SwiftySegmentedPicker" */;
+			productName = SegmentedPicker;
+		};
+		6D40A0BC2DDAE91C0001AE72 /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D40A0BB2DDAE91C0001AE72 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = SwiftUIIntrospect;
+		};
+		6D40EAB12DDEE8CC002CFF07 /* CustomizableSegmentedControl */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D40EAB02DDEE8CC002CFF07 /* XCRemoteSwiftPackageReference "CustomizableSegmentedControl" */;
+			productName = CustomizableSegmentedControl;
+		};
+		6D40EABB2DDF0477002CFF07 /* SwiftUIPager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D40EABA2DDF0477002CFF07 /* XCRemoteSwiftPackageReference "SwiftUIPager" */;
+			productName = SwiftUIPager;
+		};
+		6D40EAC12DDF0F82002CFF07 /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D40EAC02DDF0F82002CFF07 /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+		6D40EB0C2DDF1321002CFF07 /* ClusterKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D40EB0B2DDF1321002CFF07 /* XCRemoteSwiftPackageReference "ClusterKit" */;
+			productName = ClusterKit;
+		};
+		6D40EB0F2DDF135D002CFF07 /* MapboxDirections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D40EB0E2DDF135D002CFF07 /* XCRemoteSwiftPackageReference "mapbox-directions-swift" */;
+			productName = MapboxDirections;
+		};
+		6D40EB112DDF135D002CFF07 /* mapbox-directions-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D40EB0E2DDF135D002CFF07 /* XCRemoteSwiftPackageReference "mapbox-directions-swift" */;
+			productName = "mapbox-directions-swift";
+		};
+		6D40EB142DDF1386002CFF07 /* ActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D40EB132DDF1386002CFF07 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */;
+			productName = ActivityIndicatorView;
+		};
+		6D40EB172DDF13A5002CFF07 /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D40EB162DDF13A5002CFF07 /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

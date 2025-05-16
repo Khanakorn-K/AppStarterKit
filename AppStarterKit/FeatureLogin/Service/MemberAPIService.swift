@@ -8,7 +8,7 @@
 import Foundation
 
 class MemberAPIService {
-
+    
     func fetchSocialLogin(_ body: SocialLoginRequestModel) async throws -> SocialLoginResponseModel {
         return try await APIEndpoint.Member.vsoc
             .asReq()
@@ -16,7 +16,7 @@ class MemberAPIService {
             .showLog()
             .build()
     }
-//
+    //
     func setUpProfile(_ body: SetUpProfileRequestModel) async throws -> SetUpProfileResponseModel {
         return try await APIEndpoint.Member.profileSetup
             .asReq()
@@ -24,7 +24,7 @@ class MemberAPIService {
             .showLog()
             .build()
     }
-
+    
     func fetchLineLogIn() async throws -> LineLoginResponseModel {
         return try await NetworkUtils.shared.getLineLogIn()
     }
@@ -41,9 +41,33 @@ class MemberAPIService {
             .showLog()
             .build()
     }
-
-//
-//    func fetchLoginApple() async throws -> AppleSignInResponseModel? {
-//        return try await NetworkUtils.shared.signInApple()
-//    }
+    func  fetchSubsist(_ body:LoginSubsistRequestModel) async throws -> LoginSubsistResponseModel {
+        return try await APIEndpoint.Member.subsist
+            .asReq()
+            .addBody(with: body)
+            .showLog()
+            .build()
+    }
+    func fetchVerifyOTP(_ body : VerifyCodeRequestModel) async throws -> VerifyCodeResponseModel{
+        return try await APIEndpoint.Member.votp
+            .asReq()
+            .addBody(with: body)
+            .showLog()
+            .build()
+    }
+    func fetchForgotPassword(_ body : ForgotPasswordRequestModel) async throws -> ForgotPasswordResponseModel{
+        return try await APIEndpoint.Member.forgotPassword
+            .asReq()
+            .addBody(with: body)
+            .showLog()
+            .build()
+    
+    }
+    func fetchProfile()async throws -> ProfileResponseModel {
+        return try await APIEndpoint.Member.getProfile
+            .asReq()
+            .showLog()
+            .useToken()
+            .build()
+    }
 }

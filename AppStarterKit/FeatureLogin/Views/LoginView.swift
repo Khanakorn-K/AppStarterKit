@@ -8,10 +8,11 @@ import SwiftUI
 import RichText
 struct LoginView:View{
     @ObservedObject private var viewModel = LoginViewModel.shared
-    var completionHandler:((SocialLoginInfoResponseModel)->())?
+    var onTapButtonEmailOROTP :(()->())?
+    var completionHandler:(()->())?
     var body: some View {
         ZStack{
-//            Color.green
+            Color.white.ignoresSafeArea()
             VStack(spacing: .defaultSpacing4){
                 Asset.Login.icAppIcon.swiftUIImage
                     .resizable()
@@ -35,8 +36,7 @@ struct LoginView:View{
     }
     private func logginButtonEmailOrOTPView()-> some View{
         Button(action:{
-            Task{ try? await viewModel.handleLineLogin()
-            }
+            onTapButtonEmailOROTP?()
         } ,label: {
             ZStack{
                 HStack(spacing: .defaultSpacing2){
@@ -90,7 +90,9 @@ struct LoginView:View{
     }
     private func logginButtonWithAppleIdView()-> some View{
         Button(action:{
-            print("Apple")
+            Task{
+                try? await viewModel.handleAppleLogin()
+            }
         } ,label: {
             ZStack{
                 HStack(spacing: .defaultSpacing2){
@@ -116,7 +118,9 @@ struct LoginView:View{
     }
     private func logginButtonWithFacebookView()-> some View{
         Button(action:{
-            print("Facebook")
+            Task{
+                try? await viewModel.handleFacebookLogin()
+            }
         } ,label: {
             ZStack{
                 HStack(spacing: .defaultSpacing2){
@@ -126,7 +130,7 @@ struct LoginView:View{
                         .frame(.defaultButtonIcon + .defaultSpacing2)
                         .background(
                             Circle()
-//                                .fill(Color.colorMainApp())
+                            //                                .fill(Color.colorMainApp())
                         )
                     Text("ล็อคอินด้วย Facebook")
                         .colorTitle()
@@ -143,7 +147,7 @@ struct LoginView:View{
     @ViewBuilder
     private func policyView() -> some View {
         let text = "กดคลิกถัดไป, คุณยอมรับ <a href=\"https://www.jertam.com/privacypolicy\">ข้อกำหนดในการให้บริการ</a> และยินยอมให้ข้อมูลและพฤติกรรมเข้าใจ <a href=\"https://www.jertam.com/privacypolicy\">นโยบายความเป็นส่วนตัว</a> และคุณมีอายุอย่างน้อย 13 ปี"
-
+        
         RichText(html: text)
             .lineHeight(170)
             .imageRadius(10)
@@ -158,14 +162,14 @@ struct LoginView:View{
                 font-family: '\(FontFamily.Kanit.regular.name)';
                 src: url('\(FontFamily.Kanit.regular.name).ttf') format('truetype'); // name of your font in Info.plist
             }
-
+            
             body {
                 font-family: '\(FontFamily.Kanit.regular.name)';
                 font-size: \(CGFloat.bodyTextSize)px;
             }
             """)
     }
-
+    
 }
 #Preview {
     LoginView()

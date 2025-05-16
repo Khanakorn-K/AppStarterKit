@@ -50,7 +50,7 @@ struct SetupProfileView:View {
             }
             .padding(.defaultSpacing2)
             .onFirstAppear {
-                firstAliasName = loginViewModel.socialLoginInfoResponseModel?.name ?? ""
+                firstAliasName = loginViewModel.setUpProfileModel?.name ?? ""
             }
         }
     }
@@ -60,7 +60,7 @@ struct SetupProfileView:View {
                             selectedImage: $selectedImage,
                             isLockRatio: true
                             ,onImageChange: {image in})
-            KFImage(loginViewModel.socialLoginInfoResponseModel?.avatar?.url)
+            KFImage(loginViewModel.setUpProfileModel?.avatar?.url)
                 .resizable()
                 .scaledToFit()
                 .allowsHitTesting(false )
@@ -97,7 +97,7 @@ struct SetupProfileView:View {
             
         }
         .onFirstAppear {
-            textFieldAliasName = loginViewModel.socialLoginInfoResponseModel?.name  ?? ""
+            textFieldAliasName = loginViewModel.setUpProfileModel?.name  ?? ""
         }
     }
     private func buttonSetupProfileView()-> some View {
@@ -108,7 +108,7 @@ struct SetupProfileView:View {
                     try await loginViewModel.handleStartWithSetupProfile(avatar: selectedImage, aliasName: isChangeAliasName ? textFieldAliasName : firstAliasName)
                 }
                 else{
-                    try await loginViewModel.handleSignInAndSaveToken()
+
                 }
                 dismiss()
             }
@@ -118,4 +118,3 @@ struct SetupProfileView:View {
 #Preview{
     SetupProfileView()
 }
-

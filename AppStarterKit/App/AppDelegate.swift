@@ -10,9 +10,12 @@ import FacebookCore
 
 
 class AppDelegate: NSObject, UIApplicationDelegate {
+    private let clientSecurityService = ClientSecurityService()
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         setUpSocialLogin(application, launchOptions: launchOptions)
+        clientSecurityService.setup()
+        
         return true
     }
 
@@ -20,7 +23,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                                   launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) {
         LoginManager.shared.setup(channelID: "1561081788", universalLinkURL: nil)
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
-    }
+    } 
 }
 
 

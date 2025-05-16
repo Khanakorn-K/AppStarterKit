@@ -21,7 +21,7 @@ struct EndPointManager {
 //                                                           password: "3189RBmpt")
     
     static var tokenHost: String{
-        return ""//"\(EndPointManager.api)/v\(APIEndpoint.Member.signin.version)/\(APIEndpoint.Member.signin.path)"
+        return "\(EndPointManager.api)/v\(APIEndpoint.Member.signIn.version)/\(APIEndpoint.Member.signIn.path)"
     }
 
     static var isDev:Bool{

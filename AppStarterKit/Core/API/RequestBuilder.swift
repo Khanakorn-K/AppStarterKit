@@ -81,7 +81,7 @@ class RequestBuilder {
     
     
     public func getLoginStatus() async -> Bool {
-        return false//await LoginViewModel.shared.loginStatusManager.getLoginStatus()
+        return  await LoginViewModel.shared.isLogin
     }
  
     

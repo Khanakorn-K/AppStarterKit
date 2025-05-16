@@ -62,7 +62,7 @@ enum APIEndpoint {
     
     enum Route: String, RouteEndpoint {
         case member
-        
+        case promotion
     }
     
 }
@@ -78,6 +78,8 @@ extension APIEndpoint {
             switch self {
             case .getProfile:
                 return 5.0
+            case .signIn:
+                return 1.2
             default:
                 return 1.0
             }
@@ -87,5 +89,24 @@ extension APIEndpoint {
         case vsoc
         case profileSetup
         case getProfile
+        case subsist
+        case votp
+        case forgotPassword
+    }
+}
+extension APIEndpoint{
+    enum Promotion  : String,APIEndpointProtocal{
+        var route: any RouteEndpoint{
+            Route.promotion
+        }
+        var version:Float{
+            switch self{
+            case .getBanner:
+                return 3.1
+            default:
+                return 1.10
+            }
+        }
+        case getBanner
     }
 }

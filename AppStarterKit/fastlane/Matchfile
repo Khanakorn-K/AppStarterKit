@@ -1,0 +1,6 @@
+git_url("https://github.com/sk-chanch/App-SterterKit-Certificate.git")
+storage_mode("git")
+type("development") # Default type
+app_identifier(["com.megazy.appstarterkit"])
+username("mzdev40@gmail.com")
+team_id("DQXVMM94CM")

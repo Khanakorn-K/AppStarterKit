@@ -61,7 +61,7 @@ class NetworkUtils{
         }
     }
     
-    func getToken() async throws -> String {
+    func  getToken() async throws -> String {
         return try await hostConnect.updateAuthenticationAsync()
     }
     
