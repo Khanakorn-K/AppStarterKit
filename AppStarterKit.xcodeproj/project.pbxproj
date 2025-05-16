@@ -6,13 +6,45 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6D23E06E2DD5ADA700303B38 /* AsyncSwiftConnect in Frameworks */ = {isa = PBXBuildFile; productRef = 6D23E06D2DD5ADA700303B38 /* AsyncSwiftConnect */; };
+		6D23E0742DD5AE2100303B38 /* ClientSecurityV4 in Frameworks */ = {isa = PBXBuildFile; productRef = 6D23E0732DD5AE2100303B38 /* ClientSecurityV4 */; };
+		6D23E0772DD5AE4400303B38 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6D23E0762DD5AE4400303B38 /* FacebookCore */; };
+		6D23E0792DD5AE4400303B38 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 6D23E0782DD5AE4400303B38 /* FacebookLogin */; };
+		6D23E07C2DD5AE5E00303B38 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6D23E07B2DD5AE5E00303B38 /* Kingfisher */; };
+		6D23E07F2DD5AE7500303B38 /* LineSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 6D23E07E2DD5AE7500303B38 /* LineSDK */; };
+		6D23E0852DD5AEBB00303B38 /* NavigationStackBackport in Frameworks */ = {isa = PBXBuildFile; productRef = 6D23E0842DD5AEBB00303B38 /* NavigationStackBackport */; };
+		6D23E0882DD5AECA00303B38 /* RichText in Frameworks */ = {isa = PBXBuildFile; productRef = 6D23E0872DD5AECA00303B38 /* RichText */; };
+		6D23E08B2DD5AEDF00303B38 /* SJSegmentedViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 6D23E08A2DD5AEDF00303B38 /* SJSegmentedViewController */; };
+		6D23E08E2DD5AF2B00303B38 /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6D23E08D2DD5AF2B00303B38 /* SwifterSwift */; };
+		6D23E0912DD5AF5400303B38 /* SwiftMessages-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 6D23E0902DD5AF5400303B38 /* SwiftMessages-Dynamic */; };
+		6D23E0942DD5AF8800303B38 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 6D23E0932DD5AF8800303B38 /* Toast */; };
+		6D23E0972DD5AFA400303B38 /* CropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 6D23E0962DD5AFA400303B38 /* CropViewController */; };
+		6D23E0992DD5AFA400303B38 /* TOCropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 6D23E0982DD5AFA400303B38 /* TOCropViewController */; };
+		6D23E1992DD7043800303B38 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 6D23E1982DD7043800303B38 /* BottomSheet */; };
+		6D23E19C2DD7047200303B38 /* SwiftfulLoadingIndicators in Frameworks */ = {isa = PBXBuildFile; productRef = 6D23E19B2DD7047200303B38 /* SwiftfulLoadingIndicators */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		6D23E0462DD5AADA00303B38 /* AppStarterKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStarterKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6D23E19D2DD7052E00303B38 /* Exceptions for "AppStarterKit" folder in "AppStarterKit" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6D23E0452DD5AADA00303B38 /* AppStarterKit */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6D23E0482DD5AADA00303B38 /* AppStarterKit */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6D23E19D2DD7052E00303B38 /* Exceptions for "AppStarterKit" folder in "AppStarterKit" target */,
+			);
 			path = AppStarterKit;
 			sourceTree = "<group>";
 		};
@@ -23,6 +55,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D23E0992DD5AFA400303B38 /* TOCropViewController in Frameworks */,
+				6D23E0882DD5AECA00303B38 /* RichText in Frameworks */,
+				6D23E0942DD5AF8800303B38 /* Toast in Frameworks */,
+				6D23E08E2DD5AF2B00303B38 /* SwifterSwift in Frameworks */,
+				6D23E0792DD5AE4400303B38 /* FacebookLogin in Frameworks */,
+				6D23E0912DD5AF5400303B38 /* SwiftMessages-Dynamic in Frameworks */,
+				6D23E06E2DD5ADA700303B38 /* AsyncSwiftConnect in Frameworks */,
+				6D23E0852DD5AEBB00303B38 /* NavigationStackBackport in Frameworks */,
+				6D23E08B2DD5AEDF00303B38 /* SJSegmentedViewController in Frameworks */,
+				6D23E0772DD5AE4400303B38 /* FacebookCore in Frameworks */,
+				6D23E1992DD7043800303B38 /* BottomSheet in Frameworks */,
+				6D23E19C2DD7047200303B38 /* SwiftfulLoadingIndicators in Frameworks */,
+				6D23E07F2DD5AE7500303B38 /* LineSDK in Frameworks */,
+				6D23E0742DD5AE2100303B38 /* ClientSecurityV4 in Frameworks */,
+				6D23E07C2DD5AE5E00303B38 /* Kingfisher in Frameworks */,
+				6D23E0972DD5AFA400303B38 /* CropViewController in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +113,22 @@
 			);
 			name = AppStarterKit;
 			packageProductDependencies = (
+				6D23E06D2DD5ADA700303B38 /* AsyncSwiftConnect */,
+				6D23E0732DD5AE2100303B38 /* ClientSecurityV4 */,
+				6D23E0762DD5AE4400303B38 /* FacebookCore */,
+				6D23E0782DD5AE4400303B38 /* FacebookLogin */,
+				6D23E07B2DD5AE5E00303B38 /* Kingfisher */,
+				6D23E07E2DD5AE7500303B38 /* LineSDK */,
+				6D23E0842DD5AEBB00303B38 /* NavigationStackBackport */,
+				6D23E0872DD5AECA00303B38 /* RichText */,
+				6D23E08A2DD5AEDF00303B38 /* SJSegmentedViewController */,
+				6D23E08D2DD5AF2B00303B38 /* SwifterSwift */,
+				6D23E0902DD5AF5400303B38 /* SwiftMessages-Dynamic */,
+				6D23E0932DD5AF8800303B38 /* Toast */,
+				6D23E0962DD5AFA400303B38 /* CropViewController */,
+				6D23E0982DD5AFA400303B38 /* TOCropViewController */,
+				6D23E1982DD7043800303B38 /* BottomSheet */,
+				6D23E19B2DD7047200303B38 /* SwiftfulLoadingIndicators */,
 			);
 			productName = AppStarterKit;
 			productReference = 6D23E0462DD5AADA00303B38 /* AppStarterKit.app */;
@@ -94,6 +158,22 @@
 			);
 			mainGroup = 6D23E03D2DD5AADA00303B38;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6D23E06C2DD5ADA700303B38 /* XCRemoteSwiftPackageReference "AsyncSwiftConnect" */,
+				6D23E0722DD5AE2100303B38 /* XCRemoteSwiftPackageReference "ClientSecurityV4Package" */,
+				6D23E0752DD5AE4400303B38 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				6D23E07A2DD5AE5E00303B38 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				6D23E07D2DD5AE7500303B38 /* XCRemoteSwiftPackageReference "line-sdk-ios-swift" */,
+				6D23E0832DD5AEBB00303B38 /* XCRemoteSwiftPackageReference "navigation-stack-backport" */,
+				6D23E0862DD5AECA00303B38 /* XCRemoteSwiftPackageReference "RichText" */,
+				6D23E0892DD5AEDF00303B38 /* XCRemoteSwiftPackageReference "SJSegmentedViewController" */,
+				6D23E08C2DD5AF2B00303B38 /* XCRemoteSwiftPackageReference "SwifterSwift" */,
+				6D23E08F2DD5AF5400303B38 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
+				6D23E0922DD5AF8800303B38 /* XCRemoteSwiftPackageReference "toast-swift" */,
+				6D23E0952DD5AFA400303B38 /* XCRemoteSwiftPackageReference "TOCropViewController" */,
+				6D23E1972DD7043800303B38 /* XCRemoteSwiftPackageReference "BottomSheet" */,
+				6D23E19A2DD7047200303B38 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6D23E0472DD5AADA00303B38 /* Products */;
 			projectDirPath = "";
@@ -253,17 +333,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppStarterKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.megazy.AppStarterKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.megazy.appstarterkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -280,17 +362,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppStarterKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.megazy.AppStarterKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.megazy.appstarterkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,6 +404,204 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D23E06C2DD5ADA700303B38 /* XCRemoteSwiftPackageReference "AsyncSwiftConnect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sk-chanch/AsyncSwiftConnect";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		6D23E0722DD5AE2100303B38 /* XCRemoteSwiftPackageReference "ClientSecurityV4Package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sk-chanch/ClientSecurityV4Package.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+		6D23E0752DD5AE4400303B38 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 14.1.0;
+			};
+		};
+		6D23E07A2DD5AE5E00303B38 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 8.3.2;
+			};
+		};
+		6D23E07D2DD5AE7500303B38 /* XCRemoteSwiftPackageReference "line-sdk-ios-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/line/line-sdk-ios-swift";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.12.0;
+			};
+		};
+		6D23E0832DD5AEBB00303B38 /* XCRemoteSwiftPackageReference "navigation-stack-backport" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lm/navigation-stack-backport";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+		6D23E0862DD5AECA00303B38 /* XCRemoteSwiftPackageReference "RichText" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/NuPlay/RichText";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.5.0;
+			};
+		};
+		6D23E0892DD5AEDF00303B38 /* XCRemoteSwiftPackageReference "SJSegmentedViewController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sk-chanch/SJSegmentedViewController.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.7.0;
+			};
+		};
+		6D23E08C2DD5AF2B00303B38 /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		6D23E08F2DD5AF5400303B38 /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 10.0.1;
+			};
+		};
+		6D23E0922DD5AF8800303B38 /* XCRemoteSwiftPackageReference "toast-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BastiaanJansen/toast-swift";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.1.3;
+			};
+		};
+		6D23E0952DD5AFA400303B38 /* XCRemoteSwiftPackageReference "TOCropViewController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TimOliver/TOCropViewController.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.7.4;
+			};
+		};
+		6D23E1972DD7043800303B38 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lucaszischka/BottomSheet";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+		6D23E19A2DD7047200303B38 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulLoadingIndicators.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D23E06D2DD5ADA700303B38 /* AsyncSwiftConnect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D23E06C2DD5ADA700303B38 /* XCRemoteSwiftPackageReference "AsyncSwiftConnect" */;
+			productName = AsyncSwiftConnect;
+		};
+		6D23E0732DD5AE2100303B38 /* ClientSecurityV4 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D23E0722DD5AE2100303B38 /* XCRemoteSwiftPackageReference "ClientSecurityV4Package" */;
+			productName = ClientSecurityV4;
+		};
+		6D23E0762DD5AE4400303B38 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D23E0752DD5AE4400303B38 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		6D23E0782DD5AE4400303B38 /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D23E0752DD5AE4400303B38 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		6D23E07B2DD5AE5E00303B38 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D23E07A2DD5AE5E00303B38 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		6D23E07E2DD5AE7500303B38 /* LineSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D23E07D2DD5AE7500303B38 /* XCRemoteSwiftPackageReference "line-sdk-ios-swift" */;
+			productName = LineSDK;
+		};
+		6D23E0842DD5AEBB00303B38 /* NavigationStackBackport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D23E0832DD5AEBB00303B38 /* XCRemoteSwiftPackageReference "navigation-stack-backport" */;
+			productName = NavigationStackBackport;
+		};
+		6D23E0872DD5AECA00303B38 /* RichText */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D23E0862DD5AECA00303B38 /* XCRemoteSwiftPackageReference "RichText" */;
+			productName = RichText;
+		};
+		6D23E08A2DD5AEDF00303B38 /* SJSegmentedViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D23E0892DD5AEDF00303B38 /* XCRemoteSwiftPackageReference "SJSegmentedViewController" */;
+			productName = SJSegmentedViewController;
+		};
+		6D23E08D2DD5AF2B00303B38 /* SwifterSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D23E08C2DD5AF2B00303B38 /* XCRemoteSwiftPackageReference "SwifterSwift" */;
+			productName = SwifterSwift;
+		};
+		6D23E0902DD5AF5400303B38 /* SwiftMessages-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D23E08F2DD5AF5400303B38 /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = "SwiftMessages-Dynamic";
+		};
+		6D23E0932DD5AF8800303B38 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D23E0922DD5AF8800303B38 /* XCRemoteSwiftPackageReference "toast-swift" */;
+			productName = Toast;
+		};
+		6D23E0962DD5AFA400303B38 /* CropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D23E0952DD5AFA400303B38 /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = CropViewController;
+		};
+		6D23E0982DD5AFA400303B38 /* TOCropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D23E0952DD5AFA400303B38 /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = TOCropViewController;
+		};
+		6D23E1982DD7043800303B38 /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D23E1972DD7043800303B38 /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
+		};
+		6D23E19B2DD7047200303B38 /* SwiftfulLoadingIndicators */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D23E19A2DD7047200303B38 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */;
+			productName = SwiftfulLoadingIndicators;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6D23E03E2DD5AADA00303B38 /* Project object */;
 }
