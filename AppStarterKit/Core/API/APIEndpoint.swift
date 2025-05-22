@@ -63,6 +63,7 @@ enum APIEndpoint {
     enum Route: String, RouteEndpoint {
         case member
         case promotion
+        case feed
     }
     
 }
@@ -108,5 +109,13 @@ extension APIEndpoint{
             }
         }
         case getBanner
+    }
+}
+extension APIEndpoint{
+    enum Feed : String,APIEndpointProtocal{
+        var route: any RouteEndpoint{
+            Route.feed
+        }
+        case getplace
     }
 }

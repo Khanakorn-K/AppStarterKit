@@ -10,6 +10,7 @@ struct SideMenuView: View {
     @EnvironmentObject private var  sideMenuContainerViewModel:SideMenuContainerViewModel
     @StateObject private var viewModel = SideMenuViewModel()
     @ObservedObject private var loginViewModel = LoginViewModel.shared
+    @ObservedObject private var appState = AppState.shard
     @State private var isPresentedAlertLogout = false
     var body: some View {
         ZStack(alignment: .topLeading) {
@@ -45,13 +46,18 @@ struct SideMenuView: View {
         }
         )
         .onReceive(loginViewModel.$isLogin) { isLogin in
-            guard isLogin else { return }
+            guard isLogin else {
+                appState.profileInfo = nil
+                return
+            }
             Task {
                 print("call profile")
                 try? await viewModel.handleGetProfile()
             }
         }
-
+        .onReceive(viewModel.$profileInfo){
+            appState.profileInfo = $0
+        }
     }
     private func imageProfileView() -> some View {
         VStack(alignment: .leading, spacing: .defaultSpacing2) {

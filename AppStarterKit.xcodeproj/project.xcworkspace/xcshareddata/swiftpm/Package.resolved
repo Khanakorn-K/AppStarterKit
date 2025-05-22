@@ -1,5 +1,5 @@
 {
-  "originHash" : "be7706f33fa06e2cd00a744672c6d29b9aba6754b2469a8cbf555f72ddc8ec50",
+  "originHash" : "5f5b2e9d39fc23639217fc550ad6369a464148795314e8156ccd2001fd0672b1",
   "pins" : [
     {
       "identity" : "activityindicatorview",
@@ -179,6 +179,15 @@
       "state" : {
         "revision" : "85858c0246dcd781228301f9928519f75ce89758",
         "version" : "0.0.4"
+      }
+    },
+    {
+      "identity" : "swiftlocation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/malcommac/SwiftLocation",
+      "state" : {
+        "revision" : "010073e62cea4daefea61042a51b8619d23cdc35",
+        "version" : "6.0.0"
       }
     },
     {

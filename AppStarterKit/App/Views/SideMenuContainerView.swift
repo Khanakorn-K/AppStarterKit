@@ -13,12 +13,10 @@ struct SideMenuContainerView: View {
     @EnvironmentObject private var viewModel: SideMenuContainerViewModel
     @ObservedObject private var appState = AppState.shard
     @State private var isPresentedSetupProfileView = false
-
     @State private var isPresentedPresenPhoneOREmail = false
-    @State private var isShowMenu = false
     var body: some View {
         ZStack {
-            CustomSideMenu(showMenu: $isShowMenu,
+            CustomSideMenu(showMenu: $appState.isShowMenuSide,
                            allowGesture: $appState.isAllowGestureSideMenu,
                            mainContent: { TabbarView() },
                            sideMenuContent: { SideMenuView()})

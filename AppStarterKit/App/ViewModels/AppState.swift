@@ -6,7 +6,10 @@
 //
 
 import SwiftUI
+@MainActor
 class AppState:ObservableObject{
     static let shard = AppState()
     @Published  var isAllowGestureSideMenu:Bool = false
+    @Published  var profileInfo:ProfileInfoResponseModel?
+    @Published var isShowMenuSide = false
 }

@@ -2,28 +2,28 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>CFBundleURLTypes</key>
-    <array>
-      <dict>
-        <key>CFBundleURLSchemes</key>
-        <array>
-          <string>line3rdp.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-          <string>fb1990652954287070</string>
-        </array>
-      </dict>
-    </array>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-      <string>lineauth2</string>
-      <string>fbapi</string>
-    </array>
-    <key>FacebookAppID</key>
-    <string>1990652954287070</string>
-    <key>FacebookAutoLogAppEventsEnabled</key>
-    <string>false</string>
-    <key>FacebookClientToken</key>
-    <string>ce9f6c38b5e07c2d4b29600fe2b70cc6</string>
-    <key>FacebookDisplayName</key>
-    <string>App Starterkit</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>line3rdp.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+				<string>fb1990652954287070</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>1990652954287070</string>
+	<key>FacebookAutoLogAppEventsEnabled</key>
+	<string>false</string>
+	<key>FacebookClientToken</key>
+	<string>ce9f6c38b5e07c2d4b29600fe2b70cc6</string>
+	<key>FacebookDisplayName</key>
+	<string>App Starterkit</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>lineauth2</string>
+		<string>fbapi</string>
+	</array>
 </dict>
 </plist>

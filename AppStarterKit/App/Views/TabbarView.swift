@@ -24,7 +24,7 @@ struct TabbarView:View {
                 TabView(selection: $selection){
                     HomeView()
                     .tag(0)
-                    Text("Map")
+                    MapView()
                         .tag(1)
                     //                    Text("localtion")
                     //                        .tag(3)

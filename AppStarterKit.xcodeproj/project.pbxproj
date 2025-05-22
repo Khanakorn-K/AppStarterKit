@@ -33,6 +33,7 @@
 		6D40EB122DDF135D002CFF07 /* mapbox-directions-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 6D40EB112DDF135D002CFF07 /* mapbox-directions-swift */; };
 		6D40EB152DDF1386002CFF07 /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 6D40EB142DDF1386002CFF07 /* ActivityIndicatorView */; };
 		6D40EB182DDF13A5002CFF07 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 6D40EB172DDF13A5002CFF07 /* Logging */; };
+		6D43BFDB2DE06A3E005AE937 /* SwiftLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 6D43BFDA2DE06A3E005AE937 /* SwiftLocation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 				6D23E0882DD5AECA00303B38 /* RichText in Frameworks */,
 				6D40EABC2DDF0477002CFF07 /* SwiftUIPager in Frameworks */,
 				6D23E0942DD5AF8800303B38 /* Toast in Frameworks */,
+				6D43BFDB2DE06A3E005AE937 /* SwiftLocation in Frameworks */,
 				6D40EB0D2DDF1321002CFF07 /* ClusterKit in Frameworks */,
 				6D40EB152DDF1386002CFF07 /* ActivityIndicatorView in Frameworks */,
 				6D40EAC22DDF0F82002CFF07 /* SideMenu in Frameworks */,
@@ -161,6 +163,7 @@
 				6D40EB112DDF135D002CFF07 /* mapbox-directions-swift */,
 				6D40EB142DDF1386002CFF07 /* ActivityIndicatorView */,
 				6D40EB172DDF13A5002CFF07 /* Logging */,
+				6D43BFDA2DE06A3E005AE937 /* SwiftLocation */,
 			);
 			productName = AppStarterKit;
 			productReference = 6D23E0462DD5AADA00303B38 /* AppStarterKit.app */;
@@ -214,6 +217,7 @@
 				6D40EB0E2DDF135D002CFF07 /* XCRemoteSwiftPackageReference "mapbox-directions-swift" */,
 				6D40EB132DDF1386002CFF07 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
 				6D40EB162DDF13A5002CFF07 /* XCRemoteSwiftPackageReference "swift-log" */,
+				6D43BFD92DE06A3E005AE937 /* XCRemoteSwiftPackageReference "SwiftLocation" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6D23E0472DD5AADA00303B38 /* Products */;
@@ -376,6 +380,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppStarterKit/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "request you location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -406,6 +411,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppStarterKit/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "request you location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -633,6 +639,14 @@
 				minimumVersion = 1.6.3;
 			};
 		};
+		6D43BFD92DE06A3E005AE937 /* XCRemoteSwiftPackageReference "SwiftLocation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftLocation";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -765,6 +779,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6D40EB162DDF13A5002CFF07 /* XCRemoteSwiftPackageReference "swift-log" */;
 			productName = Logging;
+		};
+		6D43BFDA2DE06A3E005AE937 /* SwiftLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D43BFD92DE06A3E005AE937 /* XCRemoteSwiftPackageReference "SwiftLocation" */;
+			productName = SwiftLocation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
