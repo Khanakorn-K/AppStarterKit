@@ -88,7 +88,7 @@ struct HomeHeaderView:View {
                 }
                 else{
                     startTimer()
-                    appState.isAllowGestureSideMenu = true
+//                    appState.isAllowGestureSideMenu = true
 
                 }
             }

@@ -81,7 +81,7 @@ struct CustomSideMenu<MainContent: View, SideMenuContent: View>: View {
             }
         }
         .onChange(of: gestureOffset) { newValue in
-         
+         print("allowGesture",allowGesture)
             if gestureOffset != 0 {
                                 
                 // Draggingしたwidthが SideBarWidth以内の場合
