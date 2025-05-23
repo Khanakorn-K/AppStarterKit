@@ -13,7 +13,7 @@ struct TabbarView:View {
     @EnvironmentObject private var viewModel:TabbarViewModel
     @EnvironmentObject private var sideMenuContainerViewModel:SideMenuContainerViewModel
     @ObservedObject private var loginViewModel = LoginViewModel.shared
-
+    
     @State private var selection = 0
     init(){
         UITabBar.appearance().isHidden = true
@@ -23,7 +23,7 @@ struct TabbarView:View {
             VStack(){
                 TabView(selection: $selection){
                     HomeView()
-                    .tag(0)
+                        .tag(0)
                     MapView()
                         .tag(1)
                     //                    Text("localtion")
@@ -33,9 +33,9 @@ struct TabbarView:View {
             }
         }
         .frame(maxWidth:.infinity,maxHeight: .infinity)
-
+        
     }
- 
+    
     private func tabbarContainerView()->some View {
         VStack(spacing: 0){
             Divider()
