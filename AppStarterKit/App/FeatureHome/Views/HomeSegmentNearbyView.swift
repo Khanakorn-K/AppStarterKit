@@ -25,7 +25,7 @@ struct HomeSegmentNearbyView:View {
                         .onAppear{
                             Task{
                                 isLoading = true
-                                try await                             viewModel.handleLoadNextPage(lastItem: item)
+                                try await       viewModel.handleLoadNextPage(lastItem: item)
                                 isLoading = false
                             }
                         }
@@ -44,7 +44,6 @@ struct HomeSegmentNearbyView:View {
         .onFirstAppear{
             Task{
                 try await viewModel.handleOnAppear()
-                print("data>>>>>",viewModel.nearbyList)
             }
         }
         .onAppear{
@@ -86,6 +85,7 @@ struct HomeSegmentNearbyView:View {
         .frame(height: 100)
         .onTapGesture {
             onTap?(item)
+            print(item)
         }
         .contentShape(Rectangle())
     }

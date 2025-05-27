@@ -40,15 +40,24 @@ struct CustomSJView<Header:View, SegmentView:View>: UIViewControllerRepresentabl
         header._disableSafeArea = true
         sj.headerViewController = header
         sj.segmentControllers = segmentViewControllers
-            .map{
-                let host = $0.asSJUIHostingController(sj: sj)
+            .enumerated()
+            .map{index, segmentView in
+                let host = segmentView.asSJUIHostingController(sj: sj)
+                if index == 0 {
+                    host.title = "สถานที่ใกล้เคียง" // สำหรับ Segment แรก
+                } else if index == 1 {
+                    host.title = "ยอดนิยม" // สำหรับ Segment ที่สอง (ถ้ามี)
+                } else {
+                    host.title = "Segment \(index)" // สำหรับ Segment อื่นๆ
+                }
 //                host._disableSafeArea = true
                 return host
                 
         }
         
         sj.delegate = context.coordinator
-        
+        sj.segmentSelectedTitleColor = .colorMain // ตั้งค่าสีดำเมื่อถูกเลือก
+//        sj.segmentSelectedBackgroundColor = backgroundColor.uiColor
         sj.segmentedScrollView.backgroundColor = backgroundColor.uiColor
         
         self.configuration.didConfiguration?(sj)

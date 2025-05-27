@@ -99,8 +99,10 @@ class RequestBuilder {
         
         if isUseToken, isLogin, !ProcessInfo.processInfo.isPreview {
             do {
+                print("show token1")
                 let token = try await NetworkUtils.shared.getToken()
-                
+                print("show token2")
+
                 header["Authorize"] = token
                 print("use token \(token)")
             } catch {

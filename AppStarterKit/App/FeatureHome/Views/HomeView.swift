@@ -20,8 +20,11 @@ struct HomeView: View {
         ZStack {
             Color.white.ignoresSafeArea()
             CustomSJView(selectedTabIndex: $selectedTabIndex, header: { HomeHeaderView(selectedSegment: $selectedSegment,
-                                                                                       option: option) },
-                         segmentViewControllers: [getSegments(index: 0)])
+                                                option: option) },
+                         segmentViewControllers: [getSegments(index: 0),
+                                                  getSegments(index: 1),
+                                                  getSegments(index: 2)
+                                                 ])
             .configuration{config in
                 config.headerViewOffsetHeight = 44
             }
@@ -60,7 +63,18 @@ struct HomeView: View {
                     item in isPresendtedDetail = item
                 }
                 .onRefresh($onRefresh)
-            
+        case 1:
+            HomeSegmentNearbyView()
+                .onTapNearByItem{
+                    item in isPresendtedDetail = item
+                }
+                .onRefresh($onRefresh)
+        case 2:
+            HomeSegmentNearbyView()
+                .onTapNearByItem{
+                    item in isPresendtedDetail = item
+                }
+                .onRefresh($onRefresh)
         default:
             EmptyView()
         }

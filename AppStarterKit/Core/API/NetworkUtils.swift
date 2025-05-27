@@ -66,7 +66,7 @@ class NetworkUtils{
     }
     
     func getTokenPublisher() async throws -> String? {
-        try await hostConnect.updateAuthenticationAsync()
+        return try await hostConnect.updateAuthenticationAsync()
     }
     
     @MainActor
